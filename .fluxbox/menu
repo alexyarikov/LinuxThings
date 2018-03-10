@@ -20,9 +20,7 @@
       [exec] (audacious) {audacious}
       [exec] (firefox) {firefox}
       [exec] (thunderbird) {thunderbird}
-[submenu] (Wallpapers)
-      [wallpapers] (~/Images/Wallpapers/) {feh --bg-scale}
-[end]
+      [exec] (pcmanfm) {pcmanfm}
 [submenu] (Fluxbox menu)
       [config] (Configure)
 [submenu] (System Styles) {Choose a style...}
