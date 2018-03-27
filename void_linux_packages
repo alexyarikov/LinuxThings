@@ -1,0 +1,24 @@
+ii audacious-3.9_1                         Lightweight, advanced audio player focused on audio quality
+ii audacious-plugins-3.9_3                 Plugins for the Audacious media player
+ii boost-1.65.1_1                          Free peer-reviewed portable C++ source libraries
+ii boost-devel-1.65.1_1                    Free peer-reviewed portable C++ source libraries - development files
+ii clang-6.0.0_1                           Low Level Virtual Machine - C language family frontend
+ii cmake-3.10.2_1                          Cross-platform, open-source build system
+ii fluxbox-1.3.7_2                         Highly configurable and low resource X11 Window manager
+ii gdb-8.1_1                               The GNU Debugger
+ii git-2.16.2_2                            Git Tree History Storage Tool
+ii mc-4.8.20_1                             User-friendly file manager and visual shell
+ii pcmanfm-1.2.5_1                         LXDE file manager
+ii rxvt-unicode-9.22_6                     Terminal emulator supporting Xft fonts and Unicode
+ii sudo-1.8.22_1                           Allow others to run commands as root
+ii thunderbird-52.6.0_1                    Standalone Mail/News reader
+ii vim-colorschemes-20170822_1             Vim colorschemes
+ii vim-common-8.0.1587_1                   Vim editor (vi clone) - common files
+ii vim-huge-python3-8.0.1587_1             Vim editor (vi clone) - Huge (all features enabled, using Python 3)
+ii void-artwork-20170517_1                 Void Linux artwork
+ii void-repo-nonfree-9_1                   Void Linux drop-in file for the nonfree repository
+ii wifi-firmware-1.3_1                     WiFi firmware meta-package
+ii wpa_supplicant-2.6_8                    WPA/WPA2/IEEE 802.1X Supplicant
+ii xf86-video-nouveau-1.0.15_1             Xorg opensource NVIDIA video driver
+ii xorg-minimal-1.2_2                      Xorg meta-package including xorg-xserver and needed tools
+ii xrdb-1.1.1_1                            X server resource database utility
