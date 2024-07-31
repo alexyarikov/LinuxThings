@@ -3,6 +3,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 call plug#end()
 
@@ -25,15 +26,32 @@ set encoding=utf-8
 set updatetime=300
 set signcolumn=yes
 set t_Co=256
+set backspace=indent,eol,start
+set diffopt+=iwhiteall
+set cursorline
+
+packadd termdebug
+let g:termdebug_wide=1
 
 colorscheme dracula
 syntax on
 :autocmd FileType make set noexpandtab
 let g:coc_global_extensions = ['coc-clangd']
 
+" force navigating using hjkl
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+
+" QuickFix
+nmap <S-F8> :cp<CR>
+nmap <F8> :cn<CR>
+
 map <C-n> :NERDTreeToggle<CR>
 nnoremap <silent> <C-f> :FZF<CR>
 
+" CocNVim settings
 inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#next(1) : CheckBackspace() ? "\<Tab>" : coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
@@ -49,6 +67,8 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+nnoremap <silent> <F12> :CocCommand clangd.switchSourceHeader<CR>
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
